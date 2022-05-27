@@ -106,17 +106,17 @@ If your world contains NPC's, make sure to use the ```/function setting/npc``` c
 # Extra Commands
 To receive anti-cheat alerts use: ```/function notify```
 
-To ban a player use: ```/execute <playername> ~~~ function ban```
+To ban a player use: ```/execute <playername> run function ban```
 
-To freeze a player use: ```/execute <playername> ~~~ function tools/freeze```
+To freeze a player use: ```/execute <playername> run function tools/freeze```
 
 To enter vanish use: ```/function tools/vanish```
 
 To be able to fly in survival mode use: ```/function tools/fly```
 
-To view a players anticheat logs use: ```/execute <playername> ~~~ function tools/stats```
+To view a players anticheat logs use: ```/execute <playername> run function tools/stats```
 
-To clear someones ender chest use: ```/execute <playername> ~~~ function tools/ecwipe```
+To clear someones ender chest use: ```/execute <playername> run function tools/ecwipe```
 
 Additionally, there are custom features you can enable like anti-gamemode change to further enhance your realm security, these options can be used by /function settings/<name>
 

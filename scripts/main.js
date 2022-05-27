@@ -190,12 +190,14 @@ World.events.tick.subscribe(() => {
             flag(player, "InvalidSprint", "A", "Movement", false, false, true);
 
         // fly/a
+        /*
         if(config.modules.flyA.enabled && Math.abs(player.velocity.y).toFixed(4) == 0.1552 && !player.hasTag("jump") && !player.hasTag("gliding") && !player.hasTag("riding") && !player.hasTag("levitating") && player.hasTag("ground") && player.hasTag("moving")) {
             try {
-                player.runCommand("execute @s ~~~ detect ~~~ air -1 execute @s ~~~ detect ~1~~ air -1 execute @s ~~~ detect ~~~1 air -1 execute @s ~~~ detect ~1~~1 air -1 execute @s ~~~ detect ~-1~~ air -1 execute @s ~~~ detect ~~~-1 air -1 execute @s ~~~ detect ~-1~~-1 air -1 execute @s ~~~ detect ~1~~-1 air -1 testforblock ~-1~~1 air -1");
+                player.runCommand("execute as @s run detect run air -1 execute as @s run detect ~1~~ air -1 execute as @s run detect run1 air -1 execute as @s run detect ~1~~1 air -1 execute as @s run detect ~-1~~ air -1 execute as @s run detect run-1 air -1 execute as @s run detect ~-1~~-1 air -1 execute as @s run detect ~1~~-1 air -1 testforblock ~-1~~1 air -1");
                 flag(player, "Fly", "A", "Movement", "vertical_speed", Math.abs(player.velocity.y).toFixed(4), true);
             } catch {}
         }
+        */
         
         if(config.modules.autoclickerA.enabled && player.cps > 0 && new Date().getTime() - player.firstAttack > config.modules.autoclickerA.checkCPSAfter) {
             player.cps = player.cps / ((new Date().getTime() - player.firstAttack) / 1000);

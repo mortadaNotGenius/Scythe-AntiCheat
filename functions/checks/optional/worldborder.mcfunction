@@ -36,4 +36,4 @@ tag @s[scores={worldborder=6..,zPos=100000..}] add worldborder
 tag @s[scores={worldborder=6..,xPos=..-100000}] add worldborder
 tag @s[scores={worldborder=6..,zPos=..-100000}] add worldborder
 
-execute @s[tag=worldborder] ~~~ function checks/alerts/worldborder
+execute as @s[tag=worldborder] run function checks/alerts/worldborder
