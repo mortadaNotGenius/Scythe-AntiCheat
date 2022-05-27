@@ -22,10 +22,10 @@ tellraw @s[scores={gametestapi=1..}] {"rawtext":[{"text":"§3!unban <username> [
 
 # Gametest Disabled
 tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/function help§r - Shows this help page."}]}
-tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute <username> run function ban§r - Ban the specified user."}]}
+tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute as <username> run function ban§r - Ban the specified user."}]}
 tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/function notify§r - Enables/Disables cheat notifications."}]}
 tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/function credits§r - Shows credits, thats it."}]}
-tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute <username> run op§r - Op's player in Scythe AntiCheat features."}]}
+tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute as <username> run op§r - Op's player in Scythe AntiCheat features."}]}
 
 tellraw @s {"rawtext":[{"text":"\n§l§aOptional Features"}]}
 
@@ -70,10 +70,10 @@ tellraw @s[scores={gametestapi=1..}] {"rawtext":[{"text":"§3!tag <nametag>§r -
 tellraw @s[scores={gametestapi=1..}] {"rawtext":[{"text":"§3!report <player> [reason]§r - Report a player."}]}
 
 # Gametest disabled
-tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute <username> run function tools/ecwipe§r - Clears a players ender chest."}]}
-tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute <username> run tools/fly§r - Enables/disables fly mode in survival."}]}
-tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute <username> run tools/freeze§r - Freeze a player and make it so they cant move."}]}
-tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute <username> run tools/stats§r - View a specific players anticheat logs."}]}
-tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute <username> run tools/vanish§r - Enables/disables vanish (Used for spying on suspects)."}]}
+tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute as <username> run function tools/ecwipe§r - Clears a players ender chest."}]}
+tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute as <username> run tools/fly§r - Enables/disables fly mode in survival."}]}
+tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute as <username> run tools/freeze§r - Freeze a player and make it so they cant move."}]}
+tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute as <username> run tools/stats§r - View a specific players anticheat logs."}]}
+tellraw @s[scores={gametestapi=..0}] {"rawtext":[{"text":"§3/execute as <username> run tools/vanish§r - Enables/disables vanish (Used for spying on suspects)."}]}
 
 tellraw @s {"rawtext":[{"text":"\n"}]}
