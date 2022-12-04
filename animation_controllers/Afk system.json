@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.afk": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"stands_still": "!query.is_moving"
+						}
+					]
+				},
+				"stands_still": {
+					"on_entry": [
+							"v.afk = q.life_time;"
+					],
+					"transitions": [
+						{
+							"afk": "(q.life_time - v.afk) >= 30 && !q.is_moving"
+						},
+						{
+							"default": "q.is_moving"
+						}
+					]
+				},
+				"afk": {
+					"on_entry": ["/tag @s add AFK", "you afk"],
+					"animations": ["afk_animation"],
+					"transitions": [
+						{
+							"default": "query.is_moving"
+						}
+					],
+					"on_exit": ["/tag @s remove AFK", ""]
+				}
+			}
+		}
+	}
+}
